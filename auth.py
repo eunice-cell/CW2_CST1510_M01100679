@@ -1,9 +1,7 @@
 import bcrypt
 import os
 
-from jedi.settings import fast_parser
-
-USER_DATA_FILE = "../../DATA/users.txt"  #defining the user data file
+USER_DATA_FILE = "DATA/users.txt"  #defining the user data file
 #implement the Password Hashing Function
 def hash_password(plain_text_password):
     bytes_password = plain_text_password.encode('utf-8')
@@ -29,7 +27,7 @@ def register_user(username, password):
     hashed_pass = hash_password(password)
 
     # Append in correct format: username,hashed_password
-    with open("../../DATA/users.txt", "a") as f:
+    with open("DATA/users.txt", "a") as f:
         f.write(f"{username},{hashed_pass}\n")
 
     print(f"User '{username}' registered successfully.")
@@ -39,11 +37,11 @@ def register_user(username, password):
 #USER EXISTENCE CHECK
 def user_exists(username):
     # Handle case where file doesn't exist yet
-    if not os.path.exists("../../DATA/users.txt"):
+    if not os.path.exists("DATA/users.txt"):
         return False
 
     # Read file and check each username
-    with open("../../DATA/users.txt", "r") as f:
+    with open("DATA/users.txt", "r") as f:
         for line in f:
             existing_username = line.strip().split(",")[0]# to compare only username
             if existing_username == username:
@@ -58,12 +56,12 @@ import os
 
 def login_user(username, password):
     # Handle case where file doesn't exist
-    if not os.path.exists("../../DATA/users.txt"):
+    if not os.path.exists("DATA/users.txt"):
         print("No users registered yet.")
         return False
 
     # Search for username
-    with open("../../DATA/users.txt", "r") as f:
+    with open("DATA/users.txt", "r") as f:
         for line in f:
             stored_username, stored_hash = line.strip().split(",")
 

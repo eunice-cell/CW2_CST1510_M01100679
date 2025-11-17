@@ -1,10 +1,10 @@
 import sqlite3
 import csv
-databaseLoc='cyber_incidents.db'
+databaseLoc='../../DATA/intelligence_platform.db'
 conn = sqlite3.connect(databaseLoc)
 cursor = conn.cursor()
 
-with open('cyber_incidents.csv', 'r') as cyber:
+with open('../../DATA/cyber_incidents.csv', 'r') as cyber:
        i = 0
        for line in cyber.readlines():
            if i == 0:

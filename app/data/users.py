@@ -1,14 +1,12 @@
 import sqlite3
-databaseLoc='users.db'
+databaseLoc='../../DATA/intelligence_platform.db'
 conn = sqlite3.connect(databaseLoc)
 cursor = conn.cursor()
 
 with open('../../DATA/users.txt', 'r') as user:
        i = 0
        for line in user.readlines():
-           if i == 0:
-               i += 1
-               continue
+
            line = line.strip()
            vals = line.split(',')
            cursor.execute(

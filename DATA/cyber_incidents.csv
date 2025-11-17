@@ -7,7 +7,7 @@ incident_id,timestamp,severity,category,status,description
 1005,2024-03-28 20:00:00.000000,Medium,Phishing,In Progress,Incident 5 description
 1006,2024-04-09 07:00:00.000000,Medium,Phishing,In Progress,Incident 6 description
 1007,2024-05-31 02:00:00.000000,Medium,Malware,In Progress,Incident 7 description
-1008,2024-05-29 20:00:00.000000,Medium,Malware,Open,Incident 8 description
+1008,2024-05-29 20:00:00.000000,Mbedium,Malware,Open,Incident 8 description
 1009,2024-09-14 23:00:00.000000,Medium,Malware,Open,Incident 9 description
 1010,2024-10-20 01:00:00.000000,Critical,Unauthorized Access,Closed,Incident 10 description
 1011,2024-07-10 20:00:00.000000,Medium,Misconfiguration,In Progress,Incident 11 description

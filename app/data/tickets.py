@@ -1,5 +1,5 @@
 import sqlite3
-databaseLoc='tickets.db'
+databaseLoc='../../DATA/intelligence_platform.db'
 conn = sqlite3.connect(databaseLoc)
 cursor = conn.cursor()
 
