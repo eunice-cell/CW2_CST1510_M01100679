@@ -121,7 +121,6 @@ def display_menu():
 
 
 def main():
-    """Main program loop."""
     # Displays a welcome message when the program starts
     print("\nWelcome to the Week 7 Authentication System!")
 

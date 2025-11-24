@@ -21,6 +21,6 @@ with st.expander("see app details"):
 
 st.divider()
 if st.button("click to go to the login page"):
-    st.switch_page("../../pages/login.py")
+    st.switch_page("pages/login.py")
 
 
