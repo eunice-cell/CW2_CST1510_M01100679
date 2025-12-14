@@ -1,0 +1,12 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+new file mode 100644
+--- /dev/null	(date 1763139927245)
++++ b/README.md	(date 1763139927245)
+@@ -0,0 +1,2 @@
++# CWS_CST1510_M01100679
++Final project for module CST1510

@@ -1,0 +1,3 @@
+alice,$2b$12$l2zM6D2176VzZudARDEmD.As4IGhpKz72Un7.reMfwxE5oFckPLm.
+bob,$2b$12$OfUpJYM5MfM.KO.yHy/9xex3Bh6/DMcOBCl7GbKNEMYpaoag/G94y
+eunice,$2b$12$75oul3xCXUliJXkthyE.OutQXxQBlIwd43uDD1yYASdOAOv9ld5Q2
